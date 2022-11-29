@@ -11,3 +11,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* ------ NavBar ------ */
+.navBar{
+  background-color: #2F7DE3;
+  height: 50px;
+  display: flex;
+  align-items: center;  
+  width: 100%;  
+}
+
+
+.contenedorLogin{
+  position: absolute;
+  right: 20px;
+  /* border: 1px solid black; */
+  width: 150px;  
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ------ Fin NavBar ------ */
+
+/* ------ Login ------ */
+.btns{
+  color: white !important;
+  text-transform: capitalize !important;
+}
+
+#loginContained{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+
+  /* border: 1px solid red; */
+}
+
+.loginContainer{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  align-items: center;
+  gap: 25px;
+  border: 1px solid rgba(0,0,0,0.2);
+  /* background-color: #F2F2F2; */
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 50px;
+  
+}
+/* ------ Fin Login ------ */
