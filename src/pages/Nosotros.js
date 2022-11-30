@@ -3,7 +3,7 @@ import React from 'react'
 export const Nosotros = () => {
   return (
 
-<div style={{marginTop:"10px"}}>
+ <div style={{marginTop:"10px"}}>
 
   Nosotros
       <p>454  </p>
