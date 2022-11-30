@@ -19,16 +19,39 @@ code {
   display: flex;
   align-items: center;  
   width: 100%;  
+  /* border: 1px solid red; */
+}
+
+.contenedorBtns {
+  
+  /* border: 1px solid red; */
+  display: flex;
+
+}
+@media(max-width:600px) {
+  .contenedorBtns {
+  display: none;
+    /* border: 1px solid red; */
+    /* background-color: aqua; */
+    /* display: flex; */
+    /* flex-direction: column; */
+  
+  } 
+  
 }
 
 
 .contenedorLogin{
   position: absolute;
-  right: 20px;
+  right: 10px;
   /* border: 1px solid black; */
-  width: 150px;  
+  width: 250px;  
+  height: 50px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
+  /* justify-content: center; */
 }
 
 /* ------ Fin NavBar ------ */
@@ -37,28 +60,14 @@ code {
 .btns{
   color: white !important;
   text-transform: capitalize !important;
+  height: 35px;
 }
 
-#loginContained{
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  align-items: center;
+.txt{
+  /* border: 1px solid green; */
+  justify-content: flex-start;
+  color: white !important;
 
   /* border: 1px solid red; */
-}
-
-.loginContainer{
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-  align-items: center;
-  gap: 25px;
-  border: 1px solid rgba(0,0,0,0.2);
-  /* background-color: #F2F2F2; */
-  border-radius: 10px;
-  padding: 20px;
-  padding-bottom: 50px;
   
 }
-/* ------ Fin Login ------ */

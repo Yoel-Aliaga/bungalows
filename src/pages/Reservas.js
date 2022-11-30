@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+// import { Link, useNavigate } from "react-router-dom";
 
 export const Reservas = () => {
   // const history = useNavigate();
-  const user = JSON.parse(localStorage.getItem("user"));
-
+  // const user = JSON.parse(localStorage.getItem("user"));
   
+  const userLS = JSON.parse(localStorage.getItem("userSesion"));
 
   function validar() {
-    if (!user) {
+    if (!userLS) {
       window.location.href = "/login";
       return;
     }

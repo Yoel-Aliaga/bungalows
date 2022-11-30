@@ -1,18 +1,31 @@
 import { Button } from "@mui/material";
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+// import { useEffect } from "react";
 
 export const NavBar = () => {
   // Extraer las funciones de AuthContext
   // const {Login,isAuth} = useContext(AuthContext);
+  
+//   const [datos, setDatos] = React.useState([])
 
+// React.useEffect(()=>{
+// console.log("primer")
+// if(b){
+
+// }
+
+// },[])
+const userLS = JSON.parse(localStorage.getItem("userSesion"));
+// alert("userLS : " + userLS)
   function salir() {
-    localStorage.clear();
+    localStorage.removeItem("userSesion")
+    window.location.href = "/inicio"
   }
 
   return (
     <div className="navBar">
-      <div>
+      <div className="contenedorBtns">
         <Button className="btns" component={Link} to="/inicio">
           Inicio
         </Button>
@@ -24,21 +37,28 @@ export const NavBar = () => {
         </Button>
 
         <Button className="btns" component={Link} to="/reservas">
-          Reservas{" "}
+          Reservas
         </Button>
 
         <Button className="btns" component={Link} to="/contactos">
           Contactos
         </Button>
       </div>
-
+      
       <div className="contenedorLogin">
-        <Button className="btns" component={Link} to="/login">
+
+        {userLS !== null &&
+        <div className="txt">
+        Hola : {userLS.nombres + " " + userLS.apellidos}
+        </div>
+        }
+
+         {userLS === null &&
+        <Button id="b" className="btns" component={Link} to="/login">
           Ingresar
         </Button>
 
-      {/* <Button>-</Button> */}
-        {/* <Button style={{display : "none" }} className="btns" component={Link} to="/">Logout</Button>       */}
+         } 
 
         <Button
           style={{backgroundColor:"red"}}
