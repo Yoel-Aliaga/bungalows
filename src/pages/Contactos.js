@@ -26,7 +26,7 @@ export const Contactos = () => {
           height: 500,
         }}
       >
-        <Grid item marginTop="50px" xs={8} sm={8} md={4}>
+        <Grid item marginTop="100px" xs={8} sm={8} md={4}>
           <Box className="Contactos">
             <div contactenos>
               <div style={{ fontWeight: "bolder" }}>Contáctenos :</div>
@@ -44,7 +44,7 @@ export const Contactos = () => {
             {/* <div style={{ width: "50px" }}></div> */}
           </Box>
         </Grid>
-        <Grid item marginTop="50px" xs={8} sm={8} md={4}>
+        <Grid item marginTop="100px" xs={8} sm={8} md={4}>
           <Box className="Escribanos :" style={{ fontWeight: "bolder" }}>
             <Box marginBottom="10px">
               <div>Escribanos</div>
