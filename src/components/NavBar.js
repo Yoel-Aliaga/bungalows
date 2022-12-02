@@ -32,8 +32,8 @@ const userLS = JSON.parse(localStorage.getItem("userSesion"));
         <Button className="btns" component={Link} to="/nosotros">
           Nosotros
         </Button>
-        <Button className="btns" component={Link} to="/sedes">
-          Sedes
+        <Button className="btns" component={Link} to="/fotos">
+          Fotos
         </Button>
 
         <Button className="btns" component={Link} to="/reservas">

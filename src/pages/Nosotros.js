@@ -3,10 +3,10 @@ import { Grid, Card, Box } from "@mui/material";
 
 export const Nosotros = () => {
   return (
-    <div>
+    <div style={{backgroundColor:"#DDE4F1", height:"100vh" }}>
       <Grid container justifyContent="center">
-        <Grid item xs={8} sm={8} md={8} marginTop="50px">          
-          <Card variant="outlined" style={{ padding: "20px", boxShadow:"0px 4px 20px 1px rgba(0,0,0, 0.2)"}}>
+        <Grid item xs={8} sm={8} md={7} marginTop="100px">          
+          <Card variant="outlined" style={{ padding: "40px", boxShadow:"0px 4px 20px 1px rgba(0,0,0, 0.2)", backgroundColor:"#EEECE1", color:"#366092", border:"1px solid gray" }}>
             <h2 style={{ textAlign: "center", marginBottom:"20px" }}>Misión</h2>
             <div>
               Estamos centrados en ofrecer los mejores servicios de recreación,
@@ -19,8 +19,8 @@ export const Nosotros = () => {
           </Card>
         </Grid>
         
-        <Grid item xs={8} sm={8} md={8} marginTop="100px">
-          <Card variant="outlined" style={{ padding: "20px", boxShadow:"0px 4px 20px 1px rgba(0,0,0, 0.2)" }}>
+        <Grid item xs={8} sm={8} md={7} marginTop="100px">
+          <Card variant="outlined" style={{ padding: "40px", boxShadow:"0px 4px 20px 1px rgba(0,0,0, 0.2)", backgroundColor:"#EEECE1", color:"#366092", border:"1px solid gray" }}>
             <h2 style={{ textAlign: "center", marginBottom:"20px"}}>Visión</h2>
             <div>
               Ser un centro turístico y recreativo caracterizado por poseer una

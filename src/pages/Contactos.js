@@ -18,6 +18,8 @@ export const Contactos = () => {
 
   return (
     <Fragment>
+      <div style={{backgroundColor:"#DDE4F1" , height:"100vh"}}>
+
       <Grid
         container
         style={{
@@ -25,7 +27,7 @@ export const Contactos = () => {
           justifyContent: "center",
           height: 500,
         }}
-      >
+        >
         <Grid item marginTop="100px" xs={8} sm={8} md={4}>
           <Box className="Contactos">
             <div contactenos>
@@ -54,18 +56,27 @@ export const Contactos = () => {
                 placeholder="Nombres y Apellidos "
                 fullWidth
                 marginBottom="10px"
-              ></TextField>
+                style={{backgroundColor:"white"}}
+                
+                ></TextField>
             </Box>
             <Box marginBottom="10px">
-              <TextField placeholder="Correo Electrónico" fullWidth></TextField>
+              <TextField 
+              placeholder="Correo Electrónico"
+              fullWidth 
+              style={{backgroundColor:"white"}}
+                ></TextField>
             </Box>
             <Box marginBottom="20px">
               <TextField
                 placeholder="Escriba aqui su mensaje... "
                 fullWidth
-                rows="50px"
-                multiline="true"
-              ></TextField>
+                rows="10"
+                multiline
+                background="green"
+                style={{backgroundColor:"white"}}
+                
+                ></TextField>
             </Box>
             <Button variant="contained" fullWidth onClick={Gracias}>
               Enviar Mensaje
@@ -73,6 +84,7 @@ export const Contactos = () => {
           </Box>
         </Grid>
       </Grid>
+                </div>
     </Fragment>
   );
 };

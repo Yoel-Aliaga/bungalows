@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { useState, useEffect } from 'react'
 
 // const contador =  () => {
@@ -10,8 +10,21 @@ import { useState, useEffect } from 'react'
 
 export const Inicio = () => {
   return (
-    <div className='PaginaIncio'>Pagina de inicio</div>
+    <Fragment >
+
+    <div className='PaginaIncio' style={{backgroundColor:"#DDE4F1", height:"100vh"}}>Pagina de inicio</div>
+
     
+
+
+
+
+
+
+
+
+
+  </Fragment>    
   )
 }
 

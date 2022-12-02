@@ -54,6 +54,8 @@ export const Registrar = () => {
   };
 
   return (
+    <div style={{backgroundColor:"#DDE4F1"}}>
+
     <Grid container justifyContent="center" height="100vh" alignItems="start">
       <Grid item xs={12} sm={6} md={3} marginTop="50px">
         <Box justifyContent="center" display="flex">
@@ -70,7 +72,9 @@ export const Registrar = () => {
             type="text"
             value={user.nombres}
             onChange={handleInputChange}
-          />
+            style={{backgroundColor:"white"}}
+
+            />
         </Box>
 
         <Box marginBottom="10px">
@@ -83,7 +87,9 @@ export const Registrar = () => {
             type="text"
             value={user.apellidos}
             onChange={handleInputChange}
-          />
+            style={{backgroundColor:"white"}}
+
+            />
         </Box>
         <Box marginBottom="10px">
           <TextField
@@ -95,7 +101,9 @@ export const Registrar = () => {
             type="email"
             value={user.email}
             onChange={handleInputChange}
-          />
+            style={{backgroundColor:"white"}}
+
+            />
         </Box>
         <Box marginBottom="20px">
           <TextField
@@ -107,6 +115,8 @@ export const Registrar = () => {
             type="password"
             value={user.password}
             onChange={handleInputChange}
+            style={{backgroundColor:"white"}}
+
           />
         </Box>
 
@@ -117,6 +127,7 @@ export const Registrar = () => {
         </Box>
       </Grid>
     </Grid>
+            </div>
   );
 };
 

@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { NavBar } from "./components/NavBar";
 import { Inicio } from "./pages/Inicio";
 import { Nosotros } from "./pages/Nosotros";
-import { Sedes } from "./pages/Sedes.js";
+import { Fotos } from "./pages/Fotos.js";
 import { Reservas } from "./pages/Reservas";
 import { Contactos } from "./pages/Contactos";
 import { NotFound } from "./pages/NotFound";
@@ -12,6 +12,8 @@ import { Login } from "./pages/Login";
 import { Registrar } from "./pages/Registrar";
 
 import { AuthProvider } from "./context/AuthContext";
+
+
 
 function App() {
   
@@ -24,11 +26,12 @@ function App() {
               <Route path="/login" element={<Login />}></Route>
               <Route path="/inicio" element={<Inicio />}></Route>
               <Route path="/nosotros" element={<Nosotros />}></Route>
-              <Route path="/sedes" element={<Sedes />}></Route>
+              <Route path="/fotos" element={<Fotos />}></Route>
               <Route path="/reservas" element={<Reservas />}></Route>
               <Route path="/contactos" element={<Contactos />}></Route>
               {/* <Route path="/crearCuenta" element={<CrearCuenta />}></Route> */}
               <Route path="/registrar" element={<Registrar />}></Route>
+              
 
               <Route path="*" element={<NotFound />}></Route>
             </Routes>
