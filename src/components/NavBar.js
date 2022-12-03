@@ -23,15 +23,21 @@ const userLS = JSON.parse(localStorage.getItem("userSesion"));
     window.location.href = "/inicio"
   }
 
+
+  
   return (
     <div className="navBar">
+
       <div className="contenedorBtns">
-        <Button className="btns" component={Link} to="/inicio">
+
+        <Button className="btns" component={Link} to="/inicio" >
           Inicio
         </Button>
+
         <Button className="btns" component={Link} to="/nosotros">
           Nosotros
         </Button>
+
         <Button className="btns" component={Link} to="/fotos">
           Fotos
         </Button>

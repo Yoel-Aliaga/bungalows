@@ -1,20 +1,11 @@
 import React from "react";
-import {
-  Grid,
-  Card,
-  Box,
-  ImageListItem,
-  ImageList,
-  itemData,
-  CardMedia,
-  CardContent,
-} from "@mui/material";
+import {  Grid } from "@mui/material";
 
 export const Fotos = () => {
   return (
-    <div style={{backgroundColor:"#DDE4F1" }}>
-      <h2 style={{textAlign:"center"}} >Fotos</h2>
+    <div style={{backgroundColor:"#DDE4F1" , paddingTop:"50px"}}>
         
+      <h2 style={{textAlign:"center" }} >Fotos</h2>
       <Grid container  justifyContent="center" gap={5} marginTop="50px">
 
         <Grid item className="fSize f1" xs={8} sm={8} md={4} ></Grid>

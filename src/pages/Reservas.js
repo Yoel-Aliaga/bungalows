@@ -1,19 +1,13 @@
 import { Grid, Box, Button, Card } from "@mui/material";
 import React, { Fragment, useEffect } from "react";
 import { Bw } from "../components/objReserva";
-import { useState } from "react";
 // import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
-import CardReservas from "../components/CardReservas";
 
 export const Reservas = () => {
   // const history = useNavigate();
   // const user = JSON.parse(localStorage.getItem("user"));
   // const [dato, setDato] = useState("yo");
-
-  // const actualiza = () => {
-  //   setDato(dato + "heloouuu");
-  // }
 
   // console.log(dato);
 
@@ -42,7 +36,7 @@ export const Reservas = () => {
 
   return (
     <Fragment>
-      <div style={{backgroundColor:"#DDE4F1"}}>
+      <div style={{backgroundColor:"#DDE4F1", paddingTop:"50px" }}>
 
       <Grid container justifyContent="center" style={{backgroundColor:"#DDE4F1"}}>
         {/* <CardReservas a={dato}></CardReservas> */}

@@ -19,15 +19,26 @@ code {
   display: flex;
   align-items: center;  
   width: 100%;  
-}
-.contenedorBtns {
-   display: flex;
 
 }
+
+#btnMenu{
+  display: none;
+}
+
+.contenedorBtns {
+   display: flex;
+}
+
+
 @media(max-width:600px) {
   .contenedorBtns {
-  display: none;  
-  }   
+    background-color: #2F7DE3;
+    position: absolute;    
+    margin-top: 90px;  
+    width: 100%;    
+  }    
+
 }
 
 
