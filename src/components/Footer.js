@@ -42,13 +42,13 @@ export function Footer() {
         <Grid item className="oculta">
           <Box>
             Redes Sociales <br></br> <br></br>
-            <div>
+            <div >
               <div style={{ display: "flex" }}>
                 <div className="F"></div> <div> Facebook</div>
               </div>
               <br></br>
               <div style={{ display: "flex" }}>
-                <div className="T"></div>
+                <div className="T"></div>+
                 <div>Twitter</div>
               </div>
               <br></br>
