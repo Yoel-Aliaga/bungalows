@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import React, { useState, useEffect} from "react";
+import React, { useState} from "react";
 import {TextField } from "@mui/material";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
@@ -71,18 +71,18 @@ export const Login = () => {
   };
   
   
-  const validateIsLogged = () => {
+  // const validateIsLogged = () => {
     // Obtiene datos del JSON
     // const userLS = JSON.parse(localStorage.getItem("user"));
     // Datos del localStorage
     // alert ("Datos de LocalStorage : " + userLS.email + " " + userLS.password) 
 
-  };
+  // };
 
-  useEffect(() => {
+  // useEffect(() => {
     // al renderizar trae los datos almacenados en JSON
-    validateIsLogged();
-  }, []);
+    // validateIsLogged();
+  // }, []);
 
 
   

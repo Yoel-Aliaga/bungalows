@@ -10,7 +10,7 @@ export const AuthProvider = (props) => {
   );
 
   function login(email, password) {
-    if (email !== "linder@gmail.com" || password !== "123456") return false;
+    if (email !== "" || password !== "1") return false;
 
     const user = { email, password };
     // Guardar el localStorage

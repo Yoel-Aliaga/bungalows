@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Card, Box } from "@mui/material";
+import { Grid, Card } from "@mui/material";
 
 export const Nosotros = () => {
   return (

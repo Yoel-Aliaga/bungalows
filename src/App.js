@@ -10,6 +10,7 @@ import { NotFound } from "./pages/NotFound";
 import { Login } from "./pages/Login";
 // import { CrearCuenta } from "./pages/CrearCuenta";
 import { Registrar } from "./pages/Registrar";
+import {Footer} from "./components/Footer"
 
 import { AuthProvider } from "./context/AuthContext";
 
@@ -29,12 +30,12 @@ function App() {
               <Route path="/fotos" element={<Fotos />}></Route>
               <Route path="/reservas" element={<Reservas />}></Route>
               <Route path="/contactos" element={<Contactos />}></Route>
-              {/* <Route path="/crearCuenta" element={<CrearCuenta />}></Route> */}
               <Route path="/registrar" element={<Registrar />}></Route>
               
 
               <Route path="*" element={<NotFound />}></Route>
             </Routes>
+            <Footer></Footer>
       </BrowserRouter>
     </AuthProvider>
   );

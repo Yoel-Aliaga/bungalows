@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { useState, useEffect } from 'react'
+// import { useState, useEffect } from 'react'
 
 // const contador =  () => {
 //   const [cont , setCont] = useState (0);
@@ -12,10 +12,11 @@ export const Inicio = () => {
   return (
     <Fragment >
 
-    <div className='PaginaIncio' style={{backgroundColor:"#DDE4F1", height:"100vh"}}>Pagina de inicio</div>
+      <div className="PaginaInicio" style={{backgroundColor:"#DDE4F1", height:"70vh"}}>
 
-    
+    <div className='imgPrincipal'></div>
 
+    </div>
 
 
 

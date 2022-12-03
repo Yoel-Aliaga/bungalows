@@ -24,9 +24,6 @@ export const Fotos = () => {
         <Grid item className="fSize f14" xs={8} sm={8} md={4}></Grid>
         <Grid item className="fSize f15" xs={8} sm={8} md={4}></Grid>
         <Grid item className="fSize f16" xs={8} sm={8} md={4}></Grid>
-
-
-
       
       </Grid>
     </div>
